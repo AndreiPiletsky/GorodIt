@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Город IT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Navigation View Demo</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="aboutConference">О конференции</string>
+    <string name="location">Место проведения</string>
+    <string name="programm">Программа</string>
+    <string name="speakers">Докладчики</string>
+    <string name="partners">Спонсоры и партнеры</string>
+    <string name="aboutDeveloper">О разработчиках</string>
+    <string name="liked">Избранное</string>
+    <string name="aximedia">OOO «Аксимедиа Софт»</string>
+    <string name="phoneAximedia">+7 (3822) 222 137</string>
+    <string name="wwwAximedia">www.aximediasoft.com</string>
+    <string name="locationGorodIT">Место проведения</string>
+    <string name="hall_1">Точки роста ИТ бизнеса</string>
+    <string name="hall_2">Маркетинг/Продвижение</string>
+    <string name="hall_3">IT Cluster day</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

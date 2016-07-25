@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/liked"
+            android:icon="@drawable/liked"
+            android:title="@string/liked" />
+        <item
+            android:id="@+id/programm"
+            android:icon="@drawable/programm"
+            android:title="@string/programm" />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/location"
+            android:title="@string/location" />
+
+
+        <item
+            android:id="@+id/speekers"
+            android:icon="@drawable/speeker"
+            android:title="@string/speakers" />
+
+        <item
+            android:id="@+id/partners"
+            android:icon="@drawable/partner"
+            android:title="@string/partners" />
+        <item
+            android:id="@+id/aboutConference"
+            android:icon="@drawable/about"
+            android:title="@string/aboutConference" />
+        <item
+            android:id="@+id/aboutDeveloper"
+            android:icon="@drawable/develop"
+            android:title="@string/aboutDeveloper" />
+
+
+    </group>
+</menu>

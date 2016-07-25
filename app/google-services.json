@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "172856768738",
+    "firebase_url": "https://proekt-e870e.firebaseio.com",
+    "project_id": "proekt-e870e",
+    "storage_bucket": "proekt-e870e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172856768738:android:c8e2e9f501524fdf",
+        "android_client_info": {
+          "package_name": "com.example.andreika.fireb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172856768738-48l8ngti50efhv5s3vb4ls4e7te5o1pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzlRnOI-QTM38PF-28zPhKkudXzbbDqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172856768738:android:6f4f75eb9a92755a",
+        "android_client_info": {
+          "package_name": "com.example.andreika.democonference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172856768738-48l8ngti50efhv5s3vb4ls4e7te5o1pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzlRnOI-QTM38PF-28zPhKkudXzbbDqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172856768738:android:8c70d27917bcb0f2",
+        "android_client_info": {
+          "package_name": "com.example.andreika.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172856768738-48l8ngti50efhv5s3vb4ls4e7te5o1pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzlRnOI-QTM38PF-28zPhKkudXzbbDqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172856768738:android:4a5855e2d85320f7",
+        "android_client_info": {
+          "package_name": "com.example.andreika.conferencegorodit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172856768738-48l8ngti50efhv5s3vb4ls4e7te5o1pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvzlRnOI-QTM38PF-28zPhKkudXzbbDqw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
