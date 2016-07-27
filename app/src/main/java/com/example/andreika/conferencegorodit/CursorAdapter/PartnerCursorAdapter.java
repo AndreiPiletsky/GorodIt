@@ -63,8 +63,5 @@ public class PartnerCursorAdapter extends CursorAdapter {
 
         Picasso.with(context).load(image).resize(300,0).into(logo);
 
-
-
-
     }
 }

@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.example.andreika.conferencegorodit.Transform.CircleTransform;
 import com.example.andreika.conferencegorodit.R;
+import com.example.andreika.conferencegorodit.Transform.CircleTransform;
 import com.squareup.picasso.Picasso;
 
 /**

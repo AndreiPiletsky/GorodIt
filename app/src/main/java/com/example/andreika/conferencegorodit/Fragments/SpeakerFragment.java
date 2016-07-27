@@ -67,9 +67,9 @@ public class SpeakerFragment extends Fragment {
 
                 FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, aboutSpeakerFragment);
-                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.addToBackStack("speakers");
                 fragmentTransaction.commit();
-                ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("О докладчике");
+
 
 
             }
@@ -81,5 +81,10 @@ public class SpeakerFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getActivity().getResources().getString(R.string.speakers));
+    }
 
 }

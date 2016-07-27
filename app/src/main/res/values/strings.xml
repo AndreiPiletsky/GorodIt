@@ -19,9 +19,9 @@
     <string name="hall_1">Точки роста ИТ бизнеса</string>
     <string name="hall_2">Маркетинг/Продвижение</string>
     <string name="hall_3">IT Cluster day</string>
+    <string name="about_speaker">О докладчике</string>
+    <string name="about_report">О докладе</string>
 
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

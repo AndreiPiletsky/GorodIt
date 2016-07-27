@@ -1,18 +1,11 @@
 package com.example.andreika.conferencegorodit.Fragments;
 
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +16,6 @@ import android.widget.Toast;
 
 import com.example.andreika.conferencegorodit.Database.DatabaseHelper;
 import com.example.andreika.conferencegorodit.R;
-import com.example.andreika.conferencegorodit.Transform.ScaleImageView;
 
 
 import uk.co.senab.photoview.PhotoViewAttacher;

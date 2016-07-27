@@ -19,8 +19,8 @@ import android.widget.TextView;
 
 import com.example.andreika.conferencegorodit.CursorAdapter.AboutSpeakerListReportCursorAdapter;
 import com.example.andreika.conferencegorodit.Database.DatabaseHelper;
-import com.example.andreika.conferencegorodit.Transform.CircleTransform;
 import com.example.andreika.conferencegorodit.R;
+import com.example.andreika.conferencegorodit.Transform.CircleTransform;
 import com.squareup.picasso.Picasso;
 
 
@@ -102,7 +102,7 @@ public class AboutSpeakerFragment extends Fragment {
                 fragmentTransaction.replace(R.id.main_container, aboutReportFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
-                ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("О докладе");
+
             }
         });
 
@@ -110,5 +110,9 @@ public class AboutSpeakerFragment extends Fragment {
         return view;
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getActivity().getResources().getString(R.string.about_speaker));
+    }
 }

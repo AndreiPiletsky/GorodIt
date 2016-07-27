@@ -80,11 +80,11 @@ public class ProgramFragment extends Fragment {
 
             switch (position){
                 case 0 :
-                    return getActivity().getResources().getString(R.string.hall_1);
+                    return "Точки роста ИТ бизнеса";
                 case 1 :
-                    return getActivity().getResources().getString(R.string.hall_2);
+                    return "Маркетинг/Продвижение";
                 case 2 :
-                    return getActivity().getResources().getString(R.string.hall_3);
+                    return "IT Cluster day";
             }
             return null;
         }

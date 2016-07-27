@@ -59,7 +59,6 @@ public class DataFromFirebase {
     void fragmentToAbout() {
         FragmentTransaction fragmentTransaction = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_container, new AboutConferenceFragment());
-        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 

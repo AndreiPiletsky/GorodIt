@@ -5,20 +5,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.andreika.conferencegorodit.CursorAdapter.LikedListCursorAdapter;
-import com.example.andreika.conferencegorodit.CursorAdapter.SpeakerCursorAdapter;
 import com.example.andreika.conferencegorodit.Database.DatabaseHelper;
 import com.example.andreika.conferencegorodit.R;
-import com.example.andreika.conferencegorodit.Transform.CircleTransform;
-import com.squareup.picasso.Picasso;
 
 
 /**
@@ -55,6 +50,12 @@ public class LikedFragment extends Fragment {
         lvItems.setAdapter(likedListCursorAdapter);
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getActivity().getResources().getString(R.string.liked));
     }
 
 

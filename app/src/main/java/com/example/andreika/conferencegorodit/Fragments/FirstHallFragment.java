@@ -64,7 +64,6 @@ public class FirstHallFragment extends Fragment {
                 fragmentTransaction.replace(R.id.main_container, aboutReportFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
-                ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("О докладе");
 
             }
         });
@@ -73,5 +72,9 @@ public class FirstHallFragment extends Fragment {
         return view;
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getActivity().getResources().getString(R.string.programm));
+    }
 }

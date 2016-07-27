@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,17 +17,20 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-
 import com.crashlytics.android.Crashlytics;
 import com.example.andreika.conferencegorodit.Database.DataFromFirebase;
 
 import com.example.andreika.conferencegorodit.Fragments.AboutConferenceFragment;
 import com.example.andreika.conferencegorodit.Fragments.AboutDeveloperFragment;
+import com.example.andreika.conferencegorodit.Fragments.AboutReportFragment;
+import com.example.andreika.conferencegorodit.Fragments.AboutSpeakerFragment;
+import com.example.andreika.conferencegorodit.Fragments.FirstHallFragment;
 import com.example.andreika.conferencegorodit.Fragments.LikedFragment;
 import com.example.andreika.conferencegorodit.Fragments.LocationFragment;
 import com.example.andreika.conferencegorodit.Fragments.ProgramFragment;
 import com.example.andreika.conferencegorodit.Fragments.SpeakerFragment;
 import com.example.andreika.conferencegorodit.Fragments.SponsorFragment;
+
 import io.fabric.sdk.android.Fabric;
 
 
@@ -58,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mDrawerLayout.setDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
-
         getSupportActionBar().setTitle(R.string.aboutConference);
 
 
@@ -84,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (mSelectedId) {
 
             case R.id.liked:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new LikedFragment());
@@ -92,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.programm:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new ProgramFragment());
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.location:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new LocationFragment());
@@ -108,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.speekers:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new SpeakerFragment());
@@ -116,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.partners:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new SponsorFragment());
@@ -123,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportActionBar().setTitle(R.string.partners);
                 break;
             case R.id.aboutConference:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new AboutConferenceFragment());
@@ -132,6 +141,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
             case R.id.aboutDeveloper:
+                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_container, new AboutDeveloperFragment());
@@ -162,5 +172,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
         outState.putInt("SELECTED_ID", mSelectedId);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+
+
     }
 }
